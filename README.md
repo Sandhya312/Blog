@@ -41,6 +41,7 @@
 ![](/public/img/ss1.png)
 ![](/public/img/ss2.png)
 ![](/public/img/ss3.png)
+![](/public/img/ss5.png)
 ![](/public/img/ss4.png)
 This project is a simple blog website built using HTML, CSS, and JavaScript. The website allows users to view blog posts, search for posts by keywords, and create new blogs.
 ### Built With
