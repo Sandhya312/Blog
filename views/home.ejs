@@ -1,0 +1,41 @@
+<%- include("partials/header") -%>
+    
+<div class="main">
+    <h1>
+        Thoughts & ideas around the things that actually matter.
+    </h1>
+    
+</div>
+  <!-- <div class="posts">
+   
+      <div class="card">
+
+        <div class="cover">
+          <div class="coverFront"></div>
+          <div class=" coverBack"></div>
+        </div>
+      </div>
+  </div> -->
+
+  <div class="posts">
+    <% posts.forEach((post)=>{ %>
+    
+        <div class="card" id="" >
+            <p> <%= post.content.substring(0,100) +"..." %> <a href="/posts/<%=post._id%>" target="_blank">Read More</a> </p>
+            <div class="cover">
+                <div class="coverFront">
+                    <h1 class="blogTitle"> <%=post.title%> </h1>
+                </div>
+                <div class=" coverBack"></div>
+              </div>
+           
+    
+           
+        </div>
+     
+        
+    <%}) %>
+  </div>
+
+
+<%- include("partials/footer") -%>

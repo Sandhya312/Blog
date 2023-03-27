@@ -1,0 +1,27 @@
+
+<div class="footer-padding"></div>
+  <div class="footer">
+ 
+  </div>
+</div>
+</body>
+<script>
+  function search_blog() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('blogTitle');
+      
+    for (i = 0; i < x.length; i++) {
+       
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          // console.log(x[i].parentElement.parentElement.parentElement);
+          x[i].parentElement.parentElement.parentElement.classList.add("hide");
+        }
+        else {
+            x[i].style.display="block-item";                 
+        }
+    }
+}
+</script>
+
+</html>
